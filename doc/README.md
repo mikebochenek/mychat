@@ -1,21 +1,21 @@
-_01.10.2013_
+__01.10.2013__
 
-- [x] new project
-- [x] git
+- created new project based on revel sample chat
+- published to github
 
-_next todos_
+__next todos__
 
-- [ ] add bootstrap
-- [ ] add jquery
-- [ ] database
-- [ ] user management
-- [ ] aws etc. or some other webhost
+- add bootstrap
+- add jquery
+- database
+- user management
+- aws etc. or some other webhost
 
-_issues_
+__issues__
 
-- [ ] revel package does not work right now
+- revel package does not work right now
 
-_ideas_
+__ideas__
 
 - tags
 - reports
