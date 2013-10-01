@@ -1,4 +1,4 @@
-__01.10.2013__
+__01.10.2013 Tuesday__
 
 - created new project based on revel sample chat
 - published to github
