@@ -2,6 +2,8 @@ package chatroom
 
 import (
 	"container/list"
+	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"time"
 )
@@ -116,5 +118,14 @@ func drain(ch <-chan Event) {
 }
 
 func persist(typ, user, msg string) {
+
+	con, err := sql.Open("mysql", "test:@/test")
+	if err != nil {
+		log.Fatalln(err)
+	}
+	insertSQL := "insert into done (owner, donetext, donedate, createdate, deleted) values (?, ?, ?, ?, false)"
+	_, err = con.Exec(insertSQL, 1, msg, time.Now().Unix(), time.Now().Unix())
+
+	defer con.Close()
 	log.Printf("user: %v said: %v", user, msg)
 }
