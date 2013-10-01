@@ -2,6 +2,7 @@ package chatroom
 
 import (
 	"container/list"
+	"log"
 	"time"
 )
 
@@ -24,6 +25,7 @@ func (s Subscription) Cancel() {
 }
 
 func newEvent(typ, user, msg string) Event {
+	persist(typ, user, msg)
 	return Event{typ, user, int(time.Now().Unix()), msg}
 }
 
@@ -111,4 +113,8 @@ func drain(ch <-chan Event) {
 			return
 		}
 	}
+}
+
+func persist(typ, user, msg string) {
+	log.Printf("user: %v said: %v", user, msg)
 }
