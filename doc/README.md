@@ -8,6 +8,8 @@ __02.10.2013 Wednesday__
 
 - add bootstrap
 - add jquery
+- revel package does not work right now
+- found great digitialocean guides
 
 __next todos__
 
@@ -16,7 +18,6 @@ __next todos__
 
 __issues__
 
-- revel package does not work right now
 
 __ideas__
 
