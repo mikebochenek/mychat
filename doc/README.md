@@ -4,10 +4,13 @@ __01.10.2013 Tuesday__
 - published to github
 - database persistence (using existing done table and sql imports)
 
-__next todos__
+__02.10.2013 Wednesday__
 
 - add bootstrap
 - add jquery
+
+__next todos__
+
 - user management
 - aws etc. or some other webhost
 
