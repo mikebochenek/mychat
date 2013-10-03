@@ -24,3 +24,6 @@ __ideas__
 - tags
 - reports
 - free
+- visualization
+- blog
+- motivation and usage
